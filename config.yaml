@@ -1,5 +1,5 @@
 proxies:
-  - name: ASIA+VMESS-WS(2023-04-04)
+  - name: ASIA(2023-04-04)
     server: "104.18.2.2"
     port: 443
     type: vmess
