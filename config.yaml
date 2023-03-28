@@ -4,7 +4,7 @@ redir-port: 7892
 mixed-port: 7893
 tproxy-port: 7895
 ipv6: false
-mode: rule
+mode: global
 log-level: silent
 allow-lan: true
 external-controller: 0.0.0.0:9090
@@ -18,7 +18,7 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   listen: 0.0.0.0:7874
-  nameserver:
+  nameserver: 
     - 8.8.8.8
     - 1.0.0.1
     - https://dns.google/dns-query
@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
   - name: ASIA+VMESS-WS(2023-04-04)
-    server: "104.18.2.2"
+    server: "104.18.3.2"
     port: 443
     type: vmess
     uuid: acdb3ea0-cd5f-11ed-b934-205c6d5f5d78
@@ -53,6 +53,5 @@ proxy-groups:
     type: select
     proxies:
       - ASIA+VMESS-WS(2023-04-04)
-      - DIRECT
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
