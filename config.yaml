@@ -1,0 +1,17 @@
+proxies:
+  - name: ASIA+VMESS-WS(2023-04-04)
+    server: "104.18.2.2"
+    port: 443
+    type: vmess
+    uuid: acdb3ea0-cd5f-11ed-b934-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: asia1.oceis.net
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: asia1.oceis.net
+    udp: true
